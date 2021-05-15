@@ -88,10 +88,6 @@ public class Game {
         try {
             BufferedReader rd=new BufferedReader(new FileReader(fileName));
             line=rd.readLine();
-//            while (line!=null) {
-//                System.out.println(line);
-//                line=rd.readLine();
-//            }
             JSONObject json = JSONObject.parseObject(line);
             number_of_games = (int)json.get("gamenumber");
             player_win_games = (int)json.get("playerwin");
@@ -188,7 +184,7 @@ public class Game {
     
     //js querry for display poker
     public String printPocker(String canvas, Pocker pocker, int pos) {
-        String js = canvas + ".beginPath();\n" +
+        String js = canvas + ".beginPath();\n" +        // poker frame
                           canvas + ".fillStyle=\"white\";\n" +
                           canvas + ".fillRect(5+"+pos*155+", 5, 150, 200);\n" +
                           canvas + ".stroke();\n" +
@@ -198,7 +194,7 @@ public class Game {
                           canvas + ".strokeStyle=\"black\";\n" +
                           canvas + ".rect(5+"+pos*155+",5,150,200);\n" +
                           canvas + ".stroke();";
-        if(pocker.isShow()) {
+        if(pocker.isShow()) {       // poker front
             if (pocker.getSuit().equals("spades")) {
                 js += "var suit = \"\\u2660\";\n" +
                           canvas + ".fillStyle=\"black\";\n";
@@ -219,7 +215,7 @@ public class Game {
                       canvas + ".fillText(eval('\"' + suit + \'"+pocker.number+"\"'),20+"+pos*155+",80);";
             return js;
         }
-        else {
+        else {          // poker back
             js += canvas + ".beginPath();\n" +
                       canvas + ".fillStyle=\"rgb(126,206,244)\";\n" +
                       canvas + ".fillRect(5+"+pos*155+", 5, 150, 200);\n" +

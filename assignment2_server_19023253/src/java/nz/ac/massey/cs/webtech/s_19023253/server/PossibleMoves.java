@@ -6,8 +6,6 @@
 package nz.ac.massey.cs.webtech.s_19023253.server;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.text.DecimalFormat;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;

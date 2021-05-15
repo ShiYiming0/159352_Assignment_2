@@ -12,7 +12,7 @@ package nz.ac.massey.cs.webtech.s_19023253.server;
 public class Pocker {
     String suit;
     String number;
-    boolean show;
+    boolean show;       // front or back
     
     Pocker(String face, String number, boolean show){
         this.suit = face;

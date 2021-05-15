@@ -107,8 +107,9 @@
         <% } %>
     </script>
     <script type="text/javascript">
-            var xmlhttp
-
+            var xmlhttp;
+            
+            // stand and won at the same time.
             function stand() {
                 xmlhttp = new XMLHttpRequest();
                 xmlhttp.open("POST", "/jack/move/stand", true);
