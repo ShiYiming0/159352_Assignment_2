@@ -12,7 +12,7 @@
 * This will open the blackjack game in your browser(I recommend Chrome), press "start new game" to start a game. 
 * "hit" can get a card, "stand" can stop getting card and let dealer gat cards, then decide who is the winner, 
 * press button "state" can display the score, press button "stats" can display number of games played and winning rate, "possible moves" can show possible moves. 
-* After press "stand", this round of game is over, you can choose to start a new game.
+* After pressing "stand", this round of game is over, you can choose to start a new game.
 
 ### The winning rate and number of games played data will be stored in file "stats.json" generated in /bin directory under your tomcat folder.
 
