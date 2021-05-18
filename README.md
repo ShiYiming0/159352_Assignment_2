@@ -7,7 +7,7 @@
 ### fastjson-1.2.47 and httpcomponents-client-4.5.13 is needed, they are in the project folder.
 
 # Game:
-### Please open the projects in netbeans12, run the web application project with JDK11 and Tomcat8.
+### Please open the projects in netbeans12, run the web application project with JDK11 and Tomcat8.5.
 
 * This will open the blackjack game in your browser(I recommend Chrome), press "start new game" to start a game. 
 * "hit" can get a card, "stand" can stop getting card and let dealer gat cards, then decide who is the winner, 
