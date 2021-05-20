@@ -20,11 +20,14 @@
 ### JUnit4 test files are in the test package in java application "assignment2_test_19023253"
 ### Please run the web application before running tests.
 
-# Deploy
+# Deploy:
 ### Under the java web directory, there is a folder "docker", which stores a "jack.war" file and Dockerfile for deployment.
 ### In CMD tool, change your directory to /docker, and build the image:
 `docker image build -t blackjack:latest .`
 ### Run the container:
 `docker container run -d --name blackjack -p 8080:8080 blackjack:latest`
 ### Then you can access the blackjack game in http://localhost:8080/jack/
- 
+
+# Heroku Deployment:
+### This web application has been deployed to heroku.
+### Access the game in https://webdev19023253.herokuapp.com/ （I recommend Chrome）.
